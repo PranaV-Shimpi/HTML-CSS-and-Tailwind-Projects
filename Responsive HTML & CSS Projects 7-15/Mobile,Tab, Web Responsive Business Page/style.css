@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* --------NAV SECTION--------- */
+li,
+a,
+button {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: #636c79;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.625rem 3.5rem;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #000000;
+}
+
+a button {
+  margin-left: 4rem;
+  padding: 0.313rem 1.875rem;
+  background-color: transparent;
+  white-space: nowrap;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+a button:hover {
+  border-color: rgb(225, 222, 222);
+}
+
+/* --------HEADER SECTION--------- */
+
+.top-head {
+  height: auto;
+  padding: 2.5rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  background-color: #636c79;
+}
+
+.head-left {
+  display: flex;
+  flex: 50%;
+}
+.top-head img {
+  height: auto;
+  width: 100%;
+}
+
+.head-right {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-around;
+}
+
+.header-text h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.header-para {
+  margin-top: 1rem;
+  width: 80%;
+  font-size: small;
+  color: silver;
+}
+
+.input-box {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  width: 80%;
+  padding: 0.313rem;
+}
+
+.input-box input {
+  background-color: transparent;
+  border: none;
+}
+
+.input-btn,
+.btn {
+  color: #fff;
+  background-color: #8bb7a2;
+  border: none;
+  white-space: nowrap;
+  padding: 0.625rem 1.25rem;
+}
+
+/* -------- MAIN --------------- */
+.main-box-container {
+  padding: 2.5rem 8rem;
+}
+
+.main-text {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.number {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.numbers h4 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.number-para {
+  font-size: small;
+  margin-top: 1rem;
+}
+
+.meeting-img {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.meeting-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------main box ----------- */
+
+.boxes {
+  margin: 2rem 0;
+}
+
+.main-text-box {
+  font-size: x-large;
+  font-weight: 600;
+}
+.main-boxx {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-boxx > * {
+  flex-basis: 100%;
+}
+
+.box-img {
+  height: auto;
+  width: 100%;
+}
+
+.main-boxx p {
+  font-size: smaller;
+}
+
+.text-boxx > * {
+  margin-top: 2rem;
+}
+
+
+/* ------------bottom------------ */
+.bottom {
+  margin: 2.5rem 8rem;
+}
+.bottom-head {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.main-text-bottom {
+  text-align: left;
+}
+.bottom-head > * {
+  flex-basis: 100%;
+}
+
+.bottom-para {
+  font-size: small;
+}
+.card-img {
+  height: auto;
+  width: 100%;
+}
+
+.cards {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.card {
+  flex: 0 1 calc(25% - 1em);
+}
+
+.card > h6,
+p {
+  margin: 1rem 0;
+}
+
+.card-name {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.card-para {
+  font-size: x-small;
+}
+
+.see-more {
+  text-align: center;
+}
+
+/* -----------Footer--------------- */
+footer {
+  padding: 2.5rem 8rem;
+  background-color: #10181d;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.footer-logo {
+  width: 4%;
+  margin-right: auto;
+}
+i {
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(246, 244, 244, 0.112);
+  border-radius: 50%;
+}
+
+i:not(:last-child) {
+  margin-right: 0.625rem;
+}
+
+.line{
+  margin: 1rem 0;
+  height: 0.01rem;
+  background-color: rgb(168, 166, 166);
+  border: none;
+}
+
+.row{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  gap:4rem
+}
+
+.col h5{
+  width: fit-content;
+  font-size: medium;
+  color: white;
+  font-weight: normal;
+}
+
+.box-list li,
+a
+{
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: rgb(195, 194, 194);
+  text-decoration: none;
+  list-style: none;
+  margin: 0.625rem 0;
+}
+
+.box-list{
+  margin-top: 1.5rem;
+}
+
+.underline{
+  margin-top: 0.1rem;
+  width: 75%;
+  height: 0.1rem;
+  background: #c5c3c3;
+  border-radius: 0.188rem;
+}
+
+/* --------media queries--------------- */
+
+@media screen and (max-width: 550px) {
+  .navigation {
+    padding: 0.625rem 2.5rem;
+  }
+
+  .input-btn,
+  .btn {
+    padding: 0.313rem 0.625rem;
+  }
+
+  li,
+  a,
+  button {
+    font-size: 0.625rem;
+  }
+  .nav__links {
+    display: none;
+  }
+  .logo {
+    width: 8%;
+  }
+
+  a button {
+    margin-left: 0rem;
+    padding: 0.213rem 1.25rem;
+    font-size: x-small;
+  }
+
+  .number {
+    justify-content: center;
+  }
+
+  .numbers h4 {
+    font-size: large;
+    text-align: center;
+  }
+
+  .number-para {
+    font-size: x-small;
+    margin-top: 0.5rem;
+  }
+
+  .top-head {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2.5rem;
+  }
+
+  .header-text h1 {
+    font-size: x-large;
+    margin: 0;
+  }
+
+  .header-para p {
+    font-size: x-small;
+    margin: 0rem;
+    width: 100%;
+  }
+
+  .input-box input {
+    width: 80%;
+  }
+
+  .input-box,
+  .header-para {
+    width: 100%;
+  }
+
+  .main-text {
+    font-size: x-large;
+  }
+
+  .main-text-box {
+    font-size: medium;
+  }
+  .main-boxx p {
+    font-size: x-small;
+  }
+  .main-boxx {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .box-2 {
+    flex-direction: column-reverse;
+  }
+  .main-box-container {
+    padding: 2.5rem 2.5rem;
+  }
+  .text-boxx > * {
+    margin-top: 1.5rem;
+  }
+
+  .bottom {
+    margin: 2.5rem 2.5rem;
+  }
+
+  .bottom-head {
+    flex-direction: column;
+  }
+  .main-text-bottom {
+    text-align: center;
+    font-size: large;
+  }
+
+  .bottom-para {
+    font-size: x-small;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 0 1 calc(100%);
+  }
+
+  .card > h6,
+  p {
+    margin: 0.5rem 0;
+  }
+
+  footer{
+    padding: 2.5rem 2.5rem;
+  }
+
+  i {
+    margin-top: 1rem;
+    padding: 0.313rem;
+    font-size: 10px;
+  }
+
+  .footer-logo{
+    width: 8%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+
+  .nav__links {
+    display: none;
+  }
+  .logo {
+    width: 8%;
+  }
+  .top-head {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2.5rem;
+  }
+  .header-text h1 {
+    font-size: x-large;
+  }
+  .header-para,
+  .input-box {
+    width: 100%;
+  }
+  .main-text {
+    font-size: x-large;
+  }
+  .main-text-box {
+    font-size: large;
+  }
+  .main-boxx {
+    flex-direction: column;
+  }
+  .box-2 {
+    flex-direction: column-reverse;
+  }
+  .main-box-container {
+    padding: 2.5rem 2.5rem;
+  }
+  .navigation {
+    padding: 2.5rem 2.5rem;
+  }
+  .bottom {
+    margin: 2.5rem 2.5rem;
+  }
+  .main-text-bottom {
+    text-align: center;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+  footer{
+    padding: 2.5rem 2.5rem;
+  }
+  i {
+    padding: 0.625rem;
+    font-size: 10px;
+  }
+  
+  .footer-logo{
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .nav__links {
+    display: none;
+  }
+  .header-text {
+    font-size: x-large;
+  }
+  .input-box,
+  .header-para {
+    width: 100%;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}

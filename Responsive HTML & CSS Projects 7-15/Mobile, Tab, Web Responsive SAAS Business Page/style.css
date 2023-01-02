@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #7030cc;
+  color: #fff;
+  height: auto;
+  padding-bottom: 2rem;
+}
+/* ----------navigation ------------------ */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+li,
+a,
+button {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav img {
+  margin-right: auto;
+  width: 4%;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #1bbcef;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #b65cd9;
+  transition: all 0.1s ease 0s;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1cc9fe;
+  margin-left: 1.25rem;
+  padding: 0.313rem 1rem;
+  border: none;
+}
+
+/* ----------nav Content -------------- */
+
+.nav-content {
+  font-family: "Poppins", serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.nav-left {
+  flex: 50%;
+  padding: 0rem 8rem 2rem 0;
+}
+
+.nav-right {
+  flex: 50%;
+}
+
+.nav-right img {
+  height: auto;
+  width: 100%;
+}
+
+.nav-left h1 {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.nav-left p {
+  font-size: small;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.right-content img {
+  height: auto;
+  width: 100%;
+}
+
+/* -------------main -------------------- */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 5rem;
+}
+.arrow {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.img-content {
+  flex: 60%;
+}
+.img-content img {
+  height: auto;
+  width: 100%;
+}
+
+.saas-content {
+  flex: 40%;
+  margin-top: 6rem;
+}
+
+.saas-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.saas-info h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+}
+.saas-info {
+  margin-top: 2rem;
+}
+
+.saas-info p {
+  font-size: medium;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  width: 80%;
+}
+
+/* -----------features--------------- */
+
+.features {
+  margin: 2rem 10rem;
+  font-family: "Poppins", serif;
+}
+
+.features h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  flex: 0 1 calc(25% - 1em);
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card,
+p {
+  margin-top: 0.313rem;
+  font-size: small;
+  justify-content: space-evenly;
+}
+.card-content {
+  padding: 0.313rem;
+  text-align: center;
+}
+
+.card:hover .card-content{
+  transition: all 0.3s ease 0s;
+  background-color: #7030cc;
+  border-radius: 10px;
+  color: #fff;
+  
+}
+.card-content h5 {
+  font-size: large;
+}
+.card-img {
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.card-imgs {
+  margin-top: 0.625rem;
+  padding: 1.5rem;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.img-1 {
+  background-color: rgba(199, 139, 139, 0.2);
+}
+
+.img-2 {
+  background-color: rgba(242, 138, 63, 0.2);
+}
+
+.img-3 {
+  background-color: rgba(120, 157, 156, 0.2);
+}
+
+.img-4 {
+  background-color: rgba(163, 66, 173, 0.2);
+}
+
+/* ----------media queries -------------- */
+
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 2rem 2.5rem;
+  }
+
+  button {
+    padding: 0.313rem 0.625rem;
+  }
+
+  li,
+  a,
+  button {
+    font-size: 0.625rem;
+  }
+  .nav__links {
+    display: none;
+  }
+  .logo {
+    width: 8%;
+  }
+  .nav-content {
+    flex-direction: column-reverse;
+    margin: 2.5rem;
+  }
+  .nav-right {
+    flex: 100%;
+  }
+  .nav-left {
+    flex: 100%;
+    padding: 0;
+  }
+  .nav-left h1 {
+    font-size: x-large;
+  }
+  .nav-left p {
+    font-size: x-small;
+    width: 100%;
+  }
+
+  main {
+    margin: 0 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-content {
+    flex: 100%;
+  }
+  .saas-content {
+    flex: 100%;
+    margin-top: 0rem;
+  }
+
+  .saas-content h2 {
+    font-size: large;
+    text-align: center;
+  }
+
+  .saas-info h4 {
+    font-size: small;
+  }
+  .saas-info {
+    margin-top: 1rem;
+  }
+  .arrow {
+    padding-top: 0rem;
+    width: 1rem;
+    height: auto;
+  }
+
+  .saas-info p {
+    font-size: small;
+    width: 100%;
+  }
+
+  .features {
+    margin: 2rem 2.5rem;
+  }
+  .features h3 {
+    font-size: large;
+  }
+  br {
+    content: " ";
+    display: none;
+  }
+  .card {
+    flex: 0 1 calc(100%);
+  }
+  .card-content h5 {
+    font-size: medium;
+  }
+  .card-content p {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+  nav {
+    padding: 2.5rem 2.5rem;
+  }
+  .nav__links {
+    display: none;
+  }
+  .logo {
+    width: 8%;
+  }
+  .nav-content {
+    flex-direction: column-reverse;
+    margin: 2.5rem;
+  }
+  .nav-right {
+    flex: 100%;
+  }
+  .nav-left {
+    flex: 100%;
+    padding: 0;
+  }
+  .nav-left h1 {
+    font-size: xx-large;
+  }
+
+  main {
+    margin: 0 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .saas-content {
+    flex: 40%;
+    margin-top: 0rem;
+  }
+
+  .saas-content h2 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .saas-info h4 {
+    font-size: medium;
+  }
+  .saas-info {
+    margin-top: 1rem;
+  }
+
+  .arrow {
+    width: 1rem;
+    height: auto;
+  }
+
+  .saas-info p {
+    font-size: small;
+    width: 70%;
+  }
+  .features {
+    margin: 2rem 2.5rem;
+  }
+  .features h3 {
+    font-size: x-large;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+  .card-content h5 {
+    font-size: large;
+  }
+  .card-content p {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .nav__links {
+    display: none;
+  }
+  .nav-left h1 {
+    font-size: 2rem;
+  }
+  .nav-left {
+    padding: 0rem 4rem 2rem 0;
+  }
+  .saas-content {
+    margin-top: 2rem;
+  }
+  .saas-content h2 {
+    font-size: large;
+  }
+  .saas-info h4 {
+    font-size: medium;
+  }
+  .saas-info p {
+    font-size: small;
+    width: 80%;
+  }
+  .arrow {
+    width: 1rem;
+    height: auto;
+  }
+  .features {
+    margin: 2rem 2.5rem;
+  }
+}
