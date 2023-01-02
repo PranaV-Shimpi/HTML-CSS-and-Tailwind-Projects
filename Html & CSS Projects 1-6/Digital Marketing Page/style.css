@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.list .list-item{
+    display: inline-block;
+    padding: 0 1.25rem;
+    color: grey;
+}
+
+.grow-list{
+    position: relative;
+    left:-7.75rem;
+}
+
+.list-item:nth-child(1){
+    color: black;
+    font-weight: 600;
+}
+
+.nav-button{
+    background-color:#5657a7;
+    color: #fff;
+    padding:0.838rem 1rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-size: medium;
+}
+
+.btn{
+    padding:1rem 2.513rem;
+    text-align: center;
+    margin-top: 4.375rem;
+    font-size: medium;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    margin-left: 6rem;
+    margin-right: 71.875rem;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #333362;
+    line-height: 1.2;
+}
+
+h1 span{
+    color: #5e5fb3;
+}
+
+.description{
+    margin-top: 1.175rem;
+    color: grey;
+    margin-right: 1rem;
+}
+
+.banner-container div img{
+width: 40.625rem;
+height: 620px;
+position: absolute;
+right: 0;
+top:0;
+bottom: 0;
+margin: auto;
+margin-top: 6rem;
+z-index: -1;
+}
+
