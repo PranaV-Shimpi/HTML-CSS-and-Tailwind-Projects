@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  font-family: "Poppins";
+}
+
+nav img {
+  height: 50px;
+  width: 250px;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.nav-items .active-item {
+  color: #fe5e35;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 50px;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.left-section h1 {
+  font-family: "Fredoka One";
+  font-size: 80px;
+}
+
+.left-section h3 {
+  font-size: 35px;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.sub-headlines {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 200;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.sub-headline {
+  font-family: "Poppins";
+  margin-left: 100px;
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.sub-headlines img {
+  margin-left: -38px;
+  position: relative;
+  top: -1px;
+  padding-right: 20px;
+}
+
+.sub-headline::before {
+  display: inline-block;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fe5e35;
+  position: relative;
+  top: 7px;
+}
+
+.text {
+  color: silver;
+  font-size: 13px;
+  font-family: "Poppins";
+  width: 90%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.dots {
+  display: flex;
+  position: relative;
+  top: 85px;
+  left: 140px;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.yellow-dot {
+  border: none;
+  background-color: #e8bd0d;
+}
+.tomato-dot {
+  border: none;
+  background-color: #fe5e35;
+}
+
+.black-dot {
+  border: none;
+  background-color: #000;
+}
+
+.action-btns {
+  margin-top: 40px;
+}
+
+.action-btn {
+  background-color: #fe5e35;
+  border: none;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+img.headphone {
+  z-index: -2;
+  position: absolute;
+  top: 150px;
+  width: 28%;
+}
+
+.discount {
+  position: relative;
+  left: -60px;
+  top: -60px;
+  z-index: -1;
+  box-shadow: 10px black;
+  width: 80%;
+}
+
+.discount-content {
+  color: #fff;
+}
+
+.discount-content h4 {
+  margin-top: -170px;
+  margin-left: -25px;
+}
+
+.discount-content span {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.right-section .action-btn {
+  position: relative;
+  top: 140px;
+  left: 150px;
+}
+
+/*-------------- Media queries ---------------- */
+
+@media screen and (max-width: 550px) {
+  nav {
+    margin: 2rem;
+    height: auto;
+  }
+  .nav-items {
+    display: none;
+  }
+  .intro-section {
+    margin: 2rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .left-section {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0;
+    font-weight: 400;
+  }
+
+  .left-section h1 {
+    margin-top: 1rem;
+    font-size: 2em;
+  }
+  .left-section h3 {
+    font-size: 1rem;
+  }
+
+  .left-section img {
+    width: 10%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .sub-headlines {
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .sub-headline {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 0.625rem;
+    padding-bottom: 1rem;
+  }
+
+  .sub-headlines img {
+    display: none;
+  }
+
+  .sub-headline::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 7px;
+  }
+
+  .text {
+    width: 100%;
+  }
+  .right-section {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .dots {
+    text-align: center;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+
+  .action-btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .action-btn {
+    font-size: 0.625rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin-right: 0;
+  }
+
+  img.headphone {
+    z-index: -2;
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .discount-content {
+    display: none;
+  }
+
+  .right-section .action-btn {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+  nav {
+    margin: 2rem;
+    height: auto;
+  }
+  .nav-items {
+    display: none;
+  }
+  .intro-section {
+    margin: 2rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .left-section {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0;
+    font-weight: 400;
+  }
+
+  .left-section h1 {
+    margin-top: 1rem;
+    font-size: 3em;
+  }
+  .left-section h3 {
+    font-size: 1rem;
+  }
+
+  .left-section img {
+    width: 10%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .sub-headlines {
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .sub-headline {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 0.625rem;
+    padding-bottom: 1rem;
+  }
+
+  .sub-headlines img {
+    display: none;
+  }
+
+  .sub-headline::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 7px;
+  }
+
+  .text {
+    width: 100%;
+  }
+  .right-section {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .dots {
+    text-align: center;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+
+  .action-btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .action-btn {
+    font-size: 0.625rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin-right: 0;
+  }
+
+  img.headphone {
+    z-index: -2;
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .discount-content {
+    display: none;
+  }
+
+  .right-section .action-btn {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1284px) {
+  .left-section h1 {
+    font-size: 60px;
+  }
+  .left-section h3 {
+    font-size: 25px;
+  }
+  h3 img {
+    width: 5%;
+  }
+  .sub-headline {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .sub-headlines {
+    margin: 25px 0px;
+  }
+
+  .sub-headline::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fe5e35;
+    position: relative;
+    top: 7px;
+  }
+
+  .sub-headlines img {
+    margin-left: -23px;
+    position: relative;
+    top: 3px;
+    padding-right: 20px;
+    width: 5.5%;
+  }
+  .action-btns {
+    margin-top: 50px;
+  }
+  .action-btn {
+    font-size: 16px;
+  }
+  .dots {
+    display: flex;
+    position: relative;
+    top: 55px;
+    left: 90px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+  .right-section .action-btn {
+    position: relative;
+    top: 70px;
+    left: 95px;
+  }
+
+  .discount {
+    top: -90px;
+    left: -40px;
+    width: 60%;
+  }
+
+  .discount-content {
+    margin-top: -180px;
+    margin-left: -10px;
+    font-size: 13px;
+  }
+
+  .discount-content h1 {
+    font-size: 35px;
+    margin-left: -5px;
+    font-family: "Fredoka One";
+    font-weight: 300;
+    margin-top: -5px;
+  }
+
+  img.headphone {
+    top: 130px;
+    width: 26%;
+  }
+  .intro-section {
+    flex-direction: column;
+  }
+}
