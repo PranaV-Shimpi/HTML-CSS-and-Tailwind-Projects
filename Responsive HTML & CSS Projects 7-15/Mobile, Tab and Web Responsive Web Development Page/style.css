@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.main-div {
+  background: url("/images/backcover.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+nav img,
+h5,
+button:not(:last-child) {
+  display: inline;
+  padding-right: 2.5rem;
+}
+
+nav h5 {
+  color: #08457d;
+  font-size: 1rem;
+}
+
+button {
+  background-image: linear-gradient(90deg, #965cf2 10%, #ee82ee 90%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+}
+.signin-btn {
+  padding: 0.313rem 1.25rem;
+  font-size: 1rem;
+}
+
+.learn-more-btn {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.263rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+}
+
+.left-section {
+  margin-left: 8.5rem;
+  margin-top: 4.375rem;
+}
+
+.left-section h1 {
+  font-size: 5rem;
+  color: #08457d;
+}
+
+.left-section h4 {
+  color: #08457d;
+  margin-top: 2.5rem;
+  margin-bottom: 3.75rem;
+  width: 32%;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+.imgs-div img:last-child {
+  position: absolute;
+  top: 7rem;
+  right: 5.5rem;
+  width: 40%;
+}
+
+.vector-img {
+  position: relative;
+  left: 52%;
+  width: 5%;
+}
+
+.vector-dot {
+  position: relative;
+  left: 49.7%;
+  top: -4rem;
+  width: 1%;
+}
+
+/* ------ Media Queries-------- */
+@media screen and (max-width: 550px) {
+  nav {
+    height: 20vh;
+  }
+  .nav-items {
+    display: none;
+  }
+  img.logo {
+    width: 30%;
+  }
+  .main-div {
+    opacity: 1;
+    background-size: contain;
+    background-position: right top;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .learn-more-btn {
+    font-size: 0.625rem;
+    margin-bottom: 2rem;
+  }
+  .left-section {
+    margin: 0 2.5rem;
+    margin-top: 23rem;
+  }
+  .left-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .left-section h4 {
+    color: #08457d;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: small;
+  }
+
+  .imgs-div img:last-child {
+    position: absolute;
+    margin: auto;
+    left: -55px;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .vector-img {
+    display: none;
+  }
+
+  .vector-dot {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 900px) {
+  nav {
+    height: 20vh;
+  }
+  .nav-items {
+    display: none;
+  }
+  img.logo {
+    width: 20%;
+  }
+  .main-div {
+    opacity: 1;
+    background-size: contain;
+    background-position: right top;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .learn-more-btn {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .left-section {
+    margin: 0 2.5rem;
+    margin-top: 35rem;
+  }
+  .left-section h1 {
+    text-align: center;
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+
+  .left-section h4 {
+    color: #08457d;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: small;
+  }
+
+  .imgs-div img:last-child {
+    position: absolute;
+    margin: auto;
+    left: -55px;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .vector-img {
+    display: none;
+  }
+
+  .vector-dot {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1284px) {
+  .main-div {
+    opacity: 1;
+    background-size: contain;
+    background-position: right top;
+  }
+  .imgs-div img:last-child {
+    width: 35%;
+  }
+  nav h5 {
+    font-size: 0.7rem;
+  }
+  .signin-btn {
+    font-size: 0.625rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+  nav img {
+    width: 11%;
+  }
+
+  .left-section {
+    margin-left: 4.5rem;
+    margin-top: 2.375rem;
+  }
+
+  .left-section h1 {
+    font-size: 4rem;
+    color: #08457d;
+  }
+  .vector-img {
+    top: -4rem;
+  }
+
+  .vector-dot {
+    top: -7.5rem;
+  }
+}
